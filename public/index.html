@@ -1,0 +1,127 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="lightgrey" />
+    <title>Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="images/sleep.png" />
+  </head>
+  <body class="body">
+    <div class="content">
+      <div class="header">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="content__forecast">
+        <div class="container my-5 mx-auto">
+          <!-- <h1 class="text-center title title">Smash-it weather app</h1> -->
+          <form class="search__location">
+            <input
+              type="text"
+              name="city"
+              id=""
+              autocomplete="off"
+              placeholder="Please enter your city!"
+              class="form-control text-muted form-rounded p-4 shadow-sm custom-istyle"
+            />
+          </form>
+
+          <div class="card rounded my-3 shadow-lg d-none back__card">
+            <div class="card-top text-center">
+              <div class="city-name my-3">
+                <p>Nairobi</p>
+                <span>...</span>
+              </div>
+              <img
+                src="images/night.svg"
+                alt=""
+                class="card-img-top time city"
+              />
+            </div>
+            <div class="card-body card__information">
+              <div class="card-mid row">
+                <div class="col-8 text-center temp"><span></span></div>
+                <div class="col-4 condition temp temp__inf">
+                  <p class="condition"></p>
+                  <p class="high"></p>
+                  <p class="low"></p>
+                </div>
+              </div>
+              <div class="icon-container card shadow mx-auto">
+                <img src="" alt="" />
+              </div>
+              <div class="card-bottom px-5 py-4 row">
+                <div class="col text-center">
+                  <p></p>
+                  <span></span>
+                </div>
+                <div class="col text-center">
+                  <p></p>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="forecast d-none my-5">
+          <div class="forecast__header">
+            <h1 class="forecast__date">thur</h1>
+            <h3 class="forecast__time">time</h3>
+          </div>
+
+          <div class="icon-container card shadow mx-auto">
+            <img class="img1" src="images/icon.svg" alt="" />
+          </div>
+          <h1 class="forecast__prediction">prediction</h1>
+          <hr />
+
+          <div class="forecast__header">
+            <h1 class="forecast__date2">thur</h1>
+            <h3 class="forecast__time2">time</h3>
+          </div>
+
+          <div class="icon-container card shadow mx-auto">
+            <img class="img2" src="images/icon.svg" alt="" />
+          </div>
+          <h1 class="forecast__prediction2">prediction</h1>
+          <hr />
+
+          <div class="forecast__header">
+            <h1 class="forecast__date3">thur</h1>
+            <h3 class="forecast__time3">time</h3>
+          </div>
+
+          <div class="icon-container card shadow mx-auto">
+            <img class="img3" src="images/icon.svg" alt="" />
+          </div>
+          <h1 class="forecast__prediction3">prediction</h1>
+          <hr />
+
+          <div class="forecast__header">
+            <h1 class="forecast__date4">thur</h1>
+            <h3 class="forecast__time4">time</h3>
+          </div>
+
+          <div class="icon-container card shadow mx-auto">
+            <img class="img4" src="images/icon.svg" alt="" />
+          </div>
+          <h1 class="forecast__prediction4">prediction</h1>
+        </div>
+      </div>
+    </div>
+    <script src="request.js"></script>
+    <script src="index.js"></script>
+    <script src="/__/firebase/7.19.1/firebase-app.js"></script>
+    <script src="/__/firebase/init.js"></script>
+  </body>
+</html>
